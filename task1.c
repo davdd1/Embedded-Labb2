@@ -2,8 +2,7 @@
 
 void setup()
 {
-    DDRB |= (1 << PB5);
-    DDRD &= ~(1 << PD7);
+    DDRB |= (1 << PB5); // Set pin 13/Inbuild LED as output
 }
 
 void loop()
