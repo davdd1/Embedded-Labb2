@@ -2,4 +2,4 @@
 ### IoT23 Inbyggda system Labb2
 #### David Stenman och Martin Berner Spångberg
 
-https://wokwi.com/projects/392232906718710785
+https://wokwi.com/projects/392703601159025665
