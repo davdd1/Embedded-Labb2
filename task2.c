@@ -1,4 +1,7 @@
-#include <Arduino.h>
+#include <stdio.h>
+#include <avr/io.h>
+#include <stdbool.h>
+#include <stdint.h>
 
 volatile uint8_t* ddrb = (volatile uint8_t*)0x24; // DDRB
 volatile uint8_t* portb = (volatile uint8_t*)0x25; // PORTB
