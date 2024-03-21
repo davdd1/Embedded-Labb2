@@ -13,12 +13,12 @@ volatile uint8_t* pind = (volatile uint8_t*)0x29; // PIND
 void setup()
 {
     *ddrb |= (1 << PB5);      // Set pin 13/Inbuild LED as output
+    *ddrd &= ~(1 << PD7);     // Set pin 7 as input
 }
 
 void loop()
 {
     uint8_t pd7State = *pind & (1 << PD7);       // Read the state of pin 7
-    *portd |= (1 << PD7);        // Set pin 7 to HIGH
     if (pd7State)
     {
         // If pin 7 is HIGH, blink the LED with 200ms delay
@@ -35,4 +35,5 @@ void loop()
         *portb &= ~(1 << PB5);
         delay(2000);
     }
+    *portd |= (1 << PD7);        // Set pin 7 to HIGH
 }
